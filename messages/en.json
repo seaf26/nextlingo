@@ -1,0 +1,54 @@
+
+{
+    "header":{
+        "home": "Home",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact Us"
+        
+    },
+    "hero_home": {
+        "title": "Technology Related Consultancy",
+        "content": "We transform ideas into technology",
+        "description": "We provide the most responsive and functional IT design for companies and businesses worldwide.",
+        "button": "Get Read More"
+    },
+    "workflows":{
+        "title": "Our Core Services",
+        "content":" Innovative Solutions for Your Success",
+        "description": "Elegant solutions for web development, mobile apps, digital marketing, and business growth, designed to drive success.",
+
+
+        "card1": {
+            "title": "Web Development",
+            "content": "Web development creates and maintains websites or applications, focusing on front-end, back-end, functionality, responsiveness, and user experience."
+        },
+        "card2": {
+            "title": "Mobile Apps",
+            "content": "Mobile application development creates software for smartphones, involving design, coding, testing, and deployment for functionality, entertainment, or information."
+        },
+        "card3": {
+            "title": "Cyber Security",
+            "content": "Cybersecurity protects systems, networks, and data from digital attacks, ensuring confidentiality, integrity, and availability of sensitive information."
+        },
+        "card4": {
+            "title": "Digital Marketing",
+            "content": "Digital marketing uses online channels like SEO, social media, email campaigns, and content creation to enhance product visibility and promotion."
+        },
+        "card5": {
+            "title": "Business Growth",
+            "content": "Business growth is a function of the business lifecycle, industry growth trends, and the owners' desire for equity value creation."
+        },
+        "card6": {
+            "title": "SEO Optimization",
+            "content": "SEO optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
+        }
+     
+    },
+    "home_blog": {
+        "title": "Recent Blog Posts",
+        "content": "Our Latest News",
+        "description": "We provide the most responsive and functional IT design for companies and businesses worldwide."
+    }
+    
+}
