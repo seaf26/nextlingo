@@ -18,7 +18,7 @@ export default function Switcher() {
     <label className="text-xs">
       <select
         defaultValue={localeActive}
-        className="bg-transparent dark:bg-gray-950 text-xs text-black dark:text-white"
+        className="bg-transparent dark:bg-gray-950 text-xs text-black dark:text-white border-none"
         onChange={onSelectChange}
         disabled={isPending}
       >

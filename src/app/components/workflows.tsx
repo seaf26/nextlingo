@@ -3,6 +3,7 @@ import WorflowImg01 from "../../../public/images/workflow-01.png";
 import WorflowImg02 from "../../../public/images/workflow-02.png";
 import WorflowImg03 from "../../../public/images/workflow-03.png";
 import Spotlight from "../components/spotlight";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export default function Workflows() {
@@ -28,7 +29,7 @@ export default function Workflows() {
           <div className="grid gap-12 lg:gap-16">
             <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
               {/* Card 1 */}
-              <a
+              <Link
                 className="group/card relative h-full overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-200/80 dark:before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-200 dark:after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
                 href="#0"
               >
@@ -75,11 +76,11 @@ export default function Workflows() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               {/* Card 2 */}
               {/* Card 2 */}
-              <a
+              <Link
                 className="group/card relative h-full overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-200/80 dark:before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-200 dark:after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
                 href="#0"
               >
@@ -116,20 +117,20 @@ export default function Workflows() {
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
                           <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card1.title")}
+                            {t("workflows.card2.title")}
                           </span>
                         </span>
                       </div>
                       <p className="text-gray-600 dark:text-indigo-200/65">
-                        {t("workflows.card1.content")}
+                        {t("workflows.card2.content")}
                       </p>
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               {/* Card 3 */}
-              <a
+              <Link
                 className="group/card relative h-full overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-200/80 dark:before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-200 dark:after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
                 href="#0"
               >
@@ -166,20 +167,21 @@ export default function Workflows() {
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
                           <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card1.title")}
+                            {t("workflows.card3.title")}
                           </span>
                         </span>
                       </div>
                       <p className="text-gray-600 dark:text-indigo-200/65">
-                        {t("workflows.card6.content")}
+                        {t("workflows.card3.content")}
                       </p>
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </Spotlight>
             <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
-              <a
+              {/* card 4 */}
+              <Link
                 className="group/card relative h-full overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-200/80 dark:before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-200 dark:after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
                 href="#0"
               >
@@ -216,18 +218,19 @@ export default function Workflows() {
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
                           <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card1.title")}
+                            {t("workflows.card4.title")}
                           </span>
                         </span>
                       </div>
                       <p className="text-gray-600 dark:text-indigo-200/65">
-                        {t("workflows.card1.content")}
+                        {t("workflows.card4.content")}
                       </p>
                     </div>
                   </div>
                 </div>
-              </a>
-              <a
+              </Link>
+              {/* Card 5 */}
+              <Link
                 className="group/card relative h-full overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-200/80 dark:before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-200 dark:after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
                 href="#0"
               >
@@ -269,13 +272,14 @@ export default function Workflows() {
                         </span>
                       </div>
                       <p className="text-gray-600 dark:text-indigo-200/65">
-                        {t("workflows.card1.content")}
+                        {t("workflows.card5.content")}
                       </p>
                     </div>
                   </div>
                 </div>
-              </a>
-              <a
+              </Link>
+              {/* Card 6 */}
+              <Link
                 className="group/card relative h-full overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-200/80 dark:before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-200 dark:after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
                 href="#0"
               >
@@ -312,17 +316,17 @@ export default function Workflows() {
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
                           <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card1.title")}
+                            {t("workflows.card6.title")}
                           </span>
                         </span>
                       </div>
                       <p className="text-gray-600 dark:text-indigo-200/65">
-                        {t("workflows.card1.content")}
+                        {t("workflows.card6.content")}
                       </p>
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </Spotlight>
           </div>
         </div>

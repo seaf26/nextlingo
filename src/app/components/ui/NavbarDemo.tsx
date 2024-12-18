@@ -22,21 +22,19 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
 
   return (
     <div
-      className={cn("fixed top-10  inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
-      
-
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item={t("home")}>
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href={`/${locale}/`}>Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href={`/${locale}/interface-design`}>Interface Design</HoveredLink>
+            <HoveredLink href={`/${locale}/seo`}>Search Engine Optimization</HoveredLink>
+            <HoveredLink href={`/${locale}/branding`}>Branding</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item={t("projects")}>
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Algochurn"
               href={`/${locale}/about`}
@@ -65,20 +63,18 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item={t("blog")}>
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href={`/${locale}/blog`}>Hobby</HoveredLink>
+            <HoveredLink href={`/${locale}/individual`}>Individual</HoveredLink>
+            <HoveredLink href={`/${locale}/team`}>Team</HoveredLink>
+            <HoveredLink href={`/${locale}/enterprise`}>Enterprise</HoveredLink>
           </div>
         </MenuItem>
-        <Link href={`/${locale}/contact`} className=" text-black dark:text-white ">
-          {t("contact")}
-        </Link>{" "}
+        <div className="text-black dark:text-white">
+          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
+        </div>
         <DarkModeToggle />
         <Switcher />
       </Menu>
-      </div>
-
-  
+    </div>
   );
 }

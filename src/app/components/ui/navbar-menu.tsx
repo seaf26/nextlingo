@@ -77,6 +77,7 @@ export const Menu = ({
   );
 };
 
+
 export const ProductItem = ({
   title,
   description,
@@ -108,12 +109,19 @@ export const ProductItem = ({
     </Link>
   );
 };
-
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({
+  children,
+  href,
+  ...rest
+}: {
+  children: React.ReactNode;
+  href: string;
+}) => {
   return (
     <Link
+      href={href}
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      className="text-neutral-700 dark:text-neutral-200 hover:text-black"
     >
       {children}
     </Link>

@@ -8,7 +8,7 @@ import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
 export default function Home() {
   return (
     <div className="mx-auto">
-      <PageIllustration />
+      {/* <PageIllustration /> */}
       <GoogleGeminiEffectDemo />
       <Workflows />
       <BentoGridDemo />
