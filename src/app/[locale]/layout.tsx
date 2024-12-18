@@ -36,13 +36,14 @@ export default async function RootLayout({
       {/* bg-black in the body */}
       
       <body
-        className={`${geistSans.variable} ${geistMono.variable} dark:bg-gray-950 overflow-x-hidden font-inter bg-white text-black text-base dark:text-gray-200 antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} dark:bg-gray-950 overflow-x-hidden font-inter bg-white text-black text-base dark:text-gray-200 antialiased mx-auto`}
       >
         <NextIntlClientProvider messages={messages}  locale={locale}>
         <NavbarDemo locale={locale}/>
         <ClientWrapper>
             {children}
-          </ClientWrapper>        <Footer />
+          </ClientWrapper>   
+               <Footer />
 
         </NextIntlClientProvider>
       </body>
