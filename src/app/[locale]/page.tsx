@@ -5,6 +5,7 @@ import { GoogleGeminiEffectDemo } from "../components/GoogleGeminiEffectDemo";
 import { BentoGridDemo } from "../components/BentoGridDemo";
 import { AnimatedPinDemo } from "../components/AnimatedPinDemo";
 
+
 export default function Home() {
   return (
     <div className="mx-auto">

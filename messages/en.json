@@ -1,54 +1,67 @@
-
 {
-    "header":{
-        "home": "Home",
-        "projects": "Projects",
-        "blog": "Blog",
-        "contact": "Contact Us"
-        
-    },
-    "hero_home": {
-        "title": "Technology Related Consultancy",
-        "content": "We transform ideas into technology",
-        "description": "We provide the most responsive and functional IT design for companies and businesses worldwide.",
-        "button": "Get Read More"
-    },
-    "workflows":{
-        "title": "Our Core Services",
-        "content":" Innovative Solutions for Your Success",
-        "description": "Elegant solutions for web development, mobile apps, digital marketing, and business growth, designed to drive success.",
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact Us"
+  },
+  "hero_home": {
+    "title": "Technology Related Consultancy",
+    "content": "We transform ideas into technology",
+    "description": "We provide the most responsive and functional IT design for companies and businesses worldwide.",
+    "button": "Get Read More"
+  },
+  "workflows": {
+    "title": "Our Core Services",
+    "content": " Innovative Solutions for Your Success",
+    "description": "Elegant solutions for web development, mobile apps, digital marketing, and business growth, designed to drive success.",
 
-
-        "card1": {
-            "title": "Web Development",
-            "content": "Web development creates and maintains websites or applications, focusing on front-end, back-end, functionality, responsiveness, and user experience."
-        },
-        "card2": {
-            "title": "Mobile Apps",
-            "content": "Mobile application development creates software for smartphones, involving design, coding, testing, and deployment for functionality, entertainment, or information."
-        },
-        "card3": {
-            "title": "Cyber Security",
-            "content": "Cybersecurity protects systems, networks, and data from digital attacks, ensuring confidentiality, integrity, and availability of sensitive information."
-        },
-        "card4": {
-            "title": "Digital Marketing",
-            "content": "Digital marketing uses online channels like SEO, social media, email campaigns, and content creation to enhance product visibility and promotion."
-        },
-        "card5": {
-            "title": "Business Growth",
-            "content": "Business growth is a function of the business lifecycle, industry growth trends, and the owners' desire for equity value creation."
-        },
-        "card6": {
-            "title": "SEO Optimization",
-            "content": "SEO optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
-        }
-     
+    "card1": {
+      "title": "Web Development",
+      "content": "Web development creates and maintains websites or applications, focusing on front-end, back-end, functionality, responsiveness, and user experience."
     },
-    "home_blog": {
-        "title": "Recent Blog Posts",
-        "content": "Our Latest News",
-        "description": "We provide the most responsive and functional IT design for companies and businesses worldwide."
+    "card2": {
+      "title": "Mobile Apps",
+      "content": "Mobile application development creates software for smartphones, involving design, coding, testing, and deployment for functionality, entertainment, or information."
+    },
+    "card3": {
+      "title": "Cyber Security",
+      "content": "Cybersecurity protects systems, networks, and data from digital attacks, ensuring confidentiality, integrity, and availability of sensitive information."
+    },
+    "card4": {
+      "title": "Digital Marketing",
+      "content": "Digital marketing uses online channels like SEO, social media, email campaigns, and content creation to enhance product visibility and promotion."
+    },
+    "card5": {
+      "title": "Business Growth",
+      "content": "Business growth is a function of the business lifecycle, industry growth trends, and the owners' desire for equity value creation."
+    },
+    "card6": {
+      "title": "SEO Optimization",
+      "content": "SEO optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
     }
-    
+  },
+ "home_blog": {
+    "title": "Recent Blog Posts",
+    "content": "Our Latest News",
+    "description": "We provide the most responsive and functional IT design for companies and businesses worldwide.",
+    "blog": {
+      "card1": {
+        "title": "Browser Compatibility",
+        "parg1": "Let's chat a bit about Browser Compatibility... Sometimes you write the code and set up the page, and it works perfectly on Chrome. But when you open it on Safari, Firefox, or even Internet Explorer, everything is messed up, as if you're on a different planet!"
+      },
+      "card2": {
+        "title": "Laravel 11 New Features and Improvements",
+        "parg": "Lazy Collections! If you are dealing with large amounts of data and want to optimize memory usage, they are the perfect solution. This feature allows you to process large amounts of data without loading it all at once into memory, which improves application speed and efficiency. How to use Lazy Collections? Here is a simple example showing how to use lazy() with the where function: $users = User::lazy()->whereStatus('active')->get(); In this example, we use lazy() to load users with an active status gradually. We can use where followed by the column name (e.g., status) and the value we want to check. Why are Lazy Collections useful? Reducing server load: When using lazy(), data is loaded gradually, reducing memory load and ensuring better performance. Code simplification: You can use the where function followed by the column name (e.g., status) inside parentheses, with the value you want to check, making the code cleaner and clearer."
+      },
+      "card3": {
+        "title": "Micro Frontend",
+        "parg": "Micro Frontend is a great idea for teams that want to combine different frameworks like React, Angular, and Vue in a single project. The idea allows us to use the strengths of each framework where it fits best, like leveraging React for component building, Angular for strong organization, and Vue for flexibility. The benefit of Micro Frontend is that it helps divide a project into independent parts, each of which can be managed by a separate team. This gives us high flexibility in managing and updating the project without affecting other parts. This is an excellent step for any frontend developer who wants to improve their skills, because frontend development isn't just about 'styling,' as some people think."
+      },
+      "card4": {
+        "title": "What is CSRF?",
+        "parg": "Let's talk about something you might have heard a lot about if you're interested in securing web applications, and that is CSRF, or Cross-Site Request Forgery. This term refers to a specific type of cyberattack that can affect security if the application isn't designed and secured properly. So, what is its idea, and how does this attack work? If you're logged into a specific website (let's say your banking account or your social media account), and the website uses Sessions or Cookies to keep your logged-in state, the attack starts when a hacker tries to exploit a specific point: the website can't tell if it was you who made that request. For example, they send you a malicious link or image on another site. If you click on it while logged into the other site (like your bank), the hacker can send a request to the site on your behalf and perform actions you didn’t request. How does CSRF work? - Logging into the website: For example, you're logged into your banking account. - The hacker sends you a malicious link or image on a website or via email, and you click on it while logged into your banking site. - If there’s insufficient protection, the request you clicked might reach the banking site, as if you made it yourself. A simple example of what can happen: The hacker could send you a link containing a request to transfer money to a specific account. When you click on the link, the bank's website receives the request and thinks it was sent by you, as long as you're logged in. How can we protect ourselves? There are many technical solutions to prevent this attack, the most important of which are: CSRF Tokens: These are randomly generated tokens created every time you open a new page or make a specific request. If the request doesn’t include the token, the website rejects and blocks it. SameSite Cookies: This is a setting in Cookies that prevents them from being sent from other websites, thus reducing the chances of executing requests from outside the site itself. Verifying the Referrer Header: The website checks where the request originated to see if it’s from the same site or another one. Why is it important to protect against CSRF? This attack is extremely dangerous because the user doesn't realize they're being attacked and thinks everything is fine, but the hacker can perform any requests on the account as if they were the user. Additionally, websites themselves can be harmed if someone exploits this vulnerability for things like financial transfers or account changes."
+      }
+    }
+  }
 }
