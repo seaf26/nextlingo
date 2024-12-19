@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,7 +28,9 @@ const DarkModeToggle = () => {
 
   return (
     <button onClick={toggleDarkMode} className="p-1 text-black dark:bg-transparent dark:text-white rounded">
-      {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+      {isDarkMode ? <CiLight  size={24}/>
+ : <MdDarkMode size={24} />
+}
     </button>
   );
 };

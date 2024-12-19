@@ -22,10 +22,10 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
 
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl max-[890px]:max-w-xl mx-auto z-50", className)}
+      className={cn("fixed top-10 inset-x-0 max-w-2xl max-[890px]:max-w-xl max-[680px]:w-fit mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item={t("home")}>
+        <MenuItem  setActive={setActive} active={active} item={t("home")}>
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href={`/${locale}/`}>Web Development</HoveredLink>
             <HoveredLink href={`/${locale}/interface-design`}>Interface Design</HoveredLink>
@@ -61,16 +61,11 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item={t("blog")}>
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href={`/${locale}/blog`}>Hobby</HoveredLink>
-            <HoveredLink href={`/${locale}/individual`}>Individual</HoveredLink>
-            <HoveredLink href={`/${locale}/team`}>Team</HoveredLink>
-            <HoveredLink href={`/${locale}/enterprise`}>Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        <div className="text-black dark:text-white ">
+            <Link className="hover:text-gray-300 transition duration-200" href={`/${locale}/blog`}>{t("blog")}</Link>
+        </div>
         <div className="text-black dark:text-white">
-          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
+          <Link className="hover:text-gray-300 transition duration-200" href={`/${locale}/contact`}>{t("contact")}</Link>
         </div>
         <DarkModeToggle />
         <Switcher />

@@ -13,7 +13,7 @@ export default function Footer() {
           aria-hidden="true"
         >
           <Image
-            className="max-w-none"
+            className="w-[1076px] h-[378px]"
             src={FooterIllustration}
             width={1076}
             height={378}

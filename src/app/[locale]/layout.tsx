@@ -40,7 +40,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages} locale={locale}>
           <NavbarDemo locale={locale} />
           <ClientWrapper>{children}</ClientWrapper>
-          {/* <Footer />   */}
+          <Footer />  
         </NextIntlClientProvider>
       </body>
     </html>
