@@ -54,13 +54,13 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
           <MenuItem setActive={setActive} active={active} item={t("home")}>
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href={`/${locale}/`}>Web Development</HoveredLink>
-              <HoveredLink href={`/${locale}/interface-design`}>
+              {/* <HoveredLink href={`/${locale}/interface-design`}>
                 Interface Design
               </HoveredLink>
               <HoveredLink href={`/${locale}/seo`}>
                 Search Engine Optimization
               </HoveredLink>
-              <HoveredLink href={`/${locale}/branding`}>Branding</HoveredLink>
+              <HoveredLink href={`/${locale}/branding`}>Branding</HoveredLink> */}
               {screenWidth < 768 && (
                 <>
                   <DarkModeToggle />
@@ -70,7 +70,7 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item={t("projects")}>
-            <div className="text-sm grid grid-cols-2 gap-10 p-4">
+            {/* <div className="text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
                 title="Algochurn"
                 href={`/${locale}/about`}
@@ -95,7 +95,7 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
                 src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                 description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
               />
-            </div>
+            </div> */}
           </MenuItem>
           <div className="text-black dark:text-white ">
             <Link
@@ -106,12 +106,12 @@ function Navbar({ className, locale }: { className?: string; locale: string }) {
             </Link>
           </div>
           <div className="text-black dark:text-white">
-            {/* <Link
+            <Link
               className="hover:text-gray-300 transition duration-200"
               href={`/${locale}/contact`}
             >
               {t("contact")}
-            </Link> */}
+            </Link>
           </div>
         </div>
         {screenWidth > 768 && (

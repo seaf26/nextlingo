@@ -3,7 +3,7 @@
     "home": "Home",
     "projects": "Projects",
     "blog": "Blog",
-    "contact": "Contact Us"
+    "contact": "Contact "
   },
   "hero_home": {
     "title": "Technology Related Consultancy",
@@ -136,6 +136,25 @@
     "title": "Ready to get started?",
     "button": "Contact Us"
   },
+  "contact_us": {
+    "subtitle": "Contact Us",
+    "title": "Let's Get In Touch",
+    "description": "We provide the most responsive and functional IT design for companies and businesses worldwide."
+    ,"content":{
+      "get": "Get in Touch",
+      "description":"We provide the most responsive and functional IT design for companies and businesses worldwide.",
+      "address1": "6 Abo Egila st. Loran,Alexandria",
+      "address2": "Alexandria-Egypt",
+      "email": "click here to send email "
+
+    }
+    
+  },
   "footer": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact Us" ,
+    "copyRight": "© 2024 ARC, INO Studio. All rights reserved."
   }
 }

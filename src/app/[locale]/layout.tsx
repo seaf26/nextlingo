@@ -2,7 +2,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "../css/style.css";
-import Footer from "../components/ui/footer";
+import Footer from "../components/ui/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import ClientWrapper from "../components/ClientWrapper"; // Import the ClientWrapper

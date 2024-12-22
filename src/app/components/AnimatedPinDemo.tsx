@@ -19,9 +19,10 @@ export function AnimatedPinDemo() {
         <p className="text-lg dark:text-indigo-200/65  text-gray-800">
         {t("content")}</p>
       </div>
-      <div className="h-full mb-20">
-        <div className=" grid gap-12 lg:gap-16">
-          <div className="group mx-auto gap-y-20 grid max-w-sm items-start gap-6 xl:grid-cols-3 lg:max-w-none lg:grid-cols-2">
+
+      <div className=" w-full flex  flex-wrap  items-center justify-center ">
+
+          <div className=" mt-16 flex items-center justify-center ">
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
@@ -38,6 +39,9 @@ export function AnimatedPinDemo() {
                 <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
               </div>
             </PinContainer>
+            </div>
+            <div className=" mt-16 flex items-center justify-center ">
+
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
@@ -54,6 +58,9 @@ export function AnimatedPinDemo() {
                 <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
               </div>
             </PinContainer>
+            </div>
+            <div className=" mt-16 flex items-center justify-center ">
+
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
@@ -70,6 +77,8 @@ export function AnimatedPinDemo() {
                 <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
               </div>
             </PinContainer>
+            </div>
+            <div className=" mt-16 flex items-center justify-center ">
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
@@ -86,6 +95,8 @@ export function AnimatedPinDemo() {
                 <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
               </div>
             </PinContainer>
+            </div>
+            <div className=" mt-16 flex items-center justify-center ">
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
@@ -102,6 +113,8 @@ export function AnimatedPinDemo() {
                 <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
               </div>
             </PinContainer>
+            </div>
+            <div className=" mt-16 flex items-center justify-center  ">
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
@@ -118,9 +131,13 @@ export function AnimatedPinDemo() {
                 <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-pink-500 via-purple-500 to-green-500" />
               </div>
             </PinContainer>
+            </div>
           </div>
-        </div>
-      </div>
     </>
   );
 }
+
+
+
+
+
