@@ -5,7 +5,6 @@ import { TracingBeamDemo } from "../../components/TracingBeamDemo";
     return (
 
       <TracingBeamDemo/>
-
     )
   }
   

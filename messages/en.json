@@ -41,27 +41,101 @@
       "content": "SEO optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
     }
   },
- "home_blog": {
+  "BentoGridDemo" :{
+    "parg1":"Code works on Chrome, fails on other browsers.",
+    "parg2":"Lazy Collections optimize memory, improve speed, and simplify code.",
+    "parg3":"Micro Frontend enables using multiple frameworks for flexible projects.",
+    "parg4":"CSRF is a dangerous attack that can harm users and websites.",
+    "parg5":"SEO is crucial for visibility, traffic, and trust.",
+    "parg6":"Retro Groovy Typography connects past and present in a timeless manner.",
+    "parg7":"Cybersecurity training is essential for individuals and organizations."
+
+  
+  },
+  "home_blog": {
     "title": "Recent Blog Posts",
     "content": "Our Latest News",
     "description": "We provide the most responsive and functional IT design for companies and businesses worldwide.",
     "blog": {
       "card1": {
         "title": "Browser Compatibility",
+        "badge": "Web Development",
         "parg1": "Let's chat a bit about Browser Compatibility... Sometimes you write the code and set up the page, and it works perfectly on Chrome. But when you open it on Safari, Firefox, or even Internet Explorer, everything is messed up, as if you're on a different planet!"
       },
       "card2": {
         "title": "Laravel 11 New Features and Improvements",
+        "badge": "Laravel",
         "parg": "Lazy Collections! If you are dealing with large amounts of data and want to optimize memory usage, they are the perfect solution. This feature allows you to process large amounts of data without loading it all at once into memory, which improves application speed and efficiency. How to use Lazy Collections? Here is a simple example showing how to use lazy() with the where function: $users = User::lazy()->whereStatus('active')->get(); In this example, we use lazy() to load users with an active status gradually. We can use where followed by the column name (e.g., status) and the value we want to check. Why are Lazy Collections useful? Reducing server load: When using lazy(), data is loaded gradually, reducing memory load and ensuring better performance. Code simplification: You can use the where function followed by the column name (e.g., status) inside parentheses, with the value you want to check, making the code cleaner and clearer."
       },
       "card3": {
         "title": "Micro Frontend",
+        "badge": "Frontend",
         "parg": "Micro Frontend is a great idea for teams that want to combine different frameworks like React, Angular, and Vue in a single project. The idea allows us to use the strengths of each framework where it fits best, like leveraging React for component building, Angular for strong organization, and Vue for flexibility. The benefit of Micro Frontend is that it helps divide a project into independent parts, each of which can be managed by a separate team. This gives us high flexibility in managing and updating the project without affecting other parts. This is an excellent step for any frontend developer who wants to improve their skills, because frontend development isn't just about 'styling,' as some people think."
       },
       "card4": {
         "title": "What is CSRF?",
+        "badge": "Security",
         "parg": "Let's talk about something you might have heard a lot about if you're interested in securing web applications, and that is CSRF, or Cross-Site Request Forgery. This term refers to a specific type of cyberattack that can affect security if the application isn't designed and secured properly. So, what is its idea, and how does this attack work? If you're logged into a specific website (let's say your banking account or your social media account), and the website uses Sessions or Cookies to keep your logged-in state, the attack starts when a hacker tries to exploit a specific point: the website can't tell if it was you who made that request. For example, they send you a malicious link or image on another site. If you click on it while logged into the other site (like your bank), the hacker can send a request to the site on your behalf and perform actions you didn’t request. How does CSRF work? - Logging into the website: For example, you're logged into your banking account. - The hacker sends you a malicious link or image on a website or via email, and you click on it while logged into your banking site. - If there’s insufficient protection, the request you clicked might reach the banking site, as if you made it yourself. A simple example of what can happen: The hacker could send you a link containing a request to transfer money to a specific account. When you click on the link, the bank's website receives the request and thinks it was sent by you, as long as you're logged in. How can we protect ourselves? There are many technical solutions to prevent this attack, the most important of which are: CSRF Tokens: These are randomly generated tokens created every time you open a new page or make a specific request. If the request doesn’t include the token, the website rejects and blocks it. SameSite Cookies: This is a setting in Cookies that prevents them from being sent from other websites, thus reducing the chances of executing requests from outside the site itself. Verifying the Referrer Header: The website checks where the request originated to see if it’s from the same site or another one. Why is it important to protect against CSRF? This attack is extremely dangerous because the user doesn't realize they're being attacked and thinks everything is fine, but the hacker can perform any requests on the account as if they were the user. Additionally, websites themselves can be harmed if someone exploits this vulnerability for things like financial transfers or account changes."
+      },
+      "card5":{
+        "title": "How important is SEO for businesses today? ",
+        "badge": "SEO",
+        "parg": "No SEO = No Visibility So, don’t risk being lost online. Even with great products or services, potential customers won’t find your website if it isn’t optimized. SEO is what gets your business noticed, brings in the right audience, and builds trust through improved search rankings. Without it, you’re invisible. With it, you’re the go-to choice.Due to its high importance in digital marketing, the SEO industry is growing rapidly, with its global market size expected to reach $157.41 Billion by 2032. Let’s explore some data to better understand the role of SEO magic: By 2025, 50% of searches are expected to be voice-activated, requiring SEO firms to optimize for conversational and long-tail queries. As of 2023, 58% of all website traffic comes from mobile devices, and search engines like Google have fully embraced mobile-first indexing to rank sites.The integration of AI and machine learning is reshaping SEO strategies, with 86% of SEO experts already using AI-powered tools.In 2023, 76% of people who searched for something nearby visited a business within a day, making local SEO a critical focus for growth. The #1 result in Google search results gets 27.6% of all clicks, making it significantly more impactful than the rest and highlighting the importance of ranking high for relevant keywords."
+      },
+      "card6": {
+        "title": "Retro Groovy Typography",
+        "badge": "Ui UX",
+        "parg": "In recent years, the design world has witnessed the dominance of big and bold typography in the UI realm, strategically placing text at the forefront to command attention. 2024 is also ushering in a fresh wave of creativity by reimagining the aesthetics of the old eras in exciting and innovative ways, like going retro, groovy, and bubbly all the way.The idea behind this trend is to evoke memories from the 70s and 80s vintage and vibrant designs while making it feel timeless and fun. This design style is influenced by the past and gives contemporary interfaces a nostalgic feel reminiscent of vintage designs. To make their user experiences memorable and unique in the overcrowded digital landscape, designers are increasingly using this aesthetic as a link between the past and the present. Retro Typography is a trend worth watching in the ever-changing field of UX/UI design because it allows designers to create experiences that connect with people deeply by marrying the old and the new in a timeless manner.The majority of industries can benefit from using retro groovy typography, but retail, cosmetics, and fashion brands can benefit the most from this trend."
+      },
+      "card7":{
+        "title": "Cybersecurity Guardians",
+        "badge": "Security",
+        "parg":"Cybersecurity Training: The Power of KnowledgeIn a digital landscape fraught with threats, knowledge is your greatest ally. Cybersecurity training equips individuals and organizations with the awareness and skills needed to identify, prevent, and respond to cyber threats effectively.The Imperative of Periodic Security Training 1. Knowledge Expansion: Continuous learning about emerging threats and techniques is vital to stay ahead of cybercriminals.2. User Empowerment: Educating users on best practices empowers them to play an active role in cybersecurity.3. Risk Mitigation: Well-trained personnel are less likely to fall victim to scams, thereby reducing the organization’s overall risk profile."
       }
     }
+  },
+  "BentoGrid":{
+    "subtitle": "عرض أحدث مدوناتنا",
+    "title": "أحدث منشورات المدونة",
+    "content": "المدونة"
+    
+  },
+  "AnimatedPinDemo":{
+    "subtitle": "Showcasing Our Latest Work",
+    "title": "Our Recent Projects",
+    "content": "We provide the most responsive and functional IT design for companies and businesses worldwide.",
+
+    "pins": {
+      "pin1": {
+        "title": "E-Commerce",
+        "content": "E-commerce is the activity of buying or selling products online or over the internet. We provide a seamless shopping experience "
+      },
+      "pin2": {
+        "title": "Web Development",
+        "content": "Web development creates and maintains websites or applications, focusing on front-end, back-end, functionality, responsiveness, and user experience."
+      },
+      "pin3": {
+        "title": "Mobile Apps",
+        "content": "Mobile application development creates software for smartphones, involving design, coding, testing, and deployment for functionality, entertainment, or information."
+      },
+      "pin4": {
+        "title": "Cyber Security",
+        "content": "Cybersecurity protects systems, networks, and data from digital attacks, ensuring confidentiality, integrity, and availability of sensitive information."
+      },
+      "pin5": {
+        "title": "Digital Marketing",
+        "content": "Digital marketing uses online channels like SEO, social media, email campaigns, and content creation to enhance product visibility and promotion."
+      },
+      "pin6": {
+        "title": "Business Growth",
+        "content": "Business growth is a function of the business lifecycle, industry growth trends, and the owners' desire for equity value creation."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Ready to get started?",
+    "button": "Contact Us"
+  },
+  "footer": {
   }
 }

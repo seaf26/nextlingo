@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <div className="mx-auto">
       {/* <PageIllustration /> */}
-      <GoogleGeminiEffectDemo />
-      <Workflows />
-      <BentoGridDemo />
+      {/* <GoogleGeminiEffectDemo /> */}
+      {/* <Workflows /> */}
+      {/* <BentoGridDemo /> */}
       <AnimatedPinDemo />
-      <Cta />
+      {/* <Cta /> */}
     </div>
   );
 }

@@ -3,6 +3,8 @@ import React from "react";
 import { HeroParallax } from "../../components/ui/hero-parallax";
 import { TimelineDemo } from "@/app/components/TimelineDemo";
 import img from "../../../../public/images/ksaxz.jpg"
+
+
 export const products = [
   {
     title: "Moonbeam",

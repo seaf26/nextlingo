@@ -5,6 +5,13 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "./ui/tracing-beam";
 import { useTranslations } from "next-intl";
+import img from "../../../public/images/1731345137489.jpeg";
+import img2 from "../../../public/images/OIP.jpeg";
+import img3 from "../../../public/images/op.jpeg";
+import img4 from "../../../public/images/download.jpeg";
+import img5 from "../../../public/images/WhatsApp Image 2024-12-21 at 14.46.26_70873d30.jpg";
+import img6 from "../../../public/images/WhatsAppImage2024-12-21at15.05.48_09493752.jpg";
+import img7 from "../../../public/images/cyber.jpg";
 const inter = Inter({ subsets: ["latin"] });
 
 export function TracingBeamDemo() {
@@ -15,27 +22,21 @@ export function TracingBeamDemo() {
       title: t("card1.title"),
       description: (
         <>
-          <p>
-            {t("card1.parg1")}
-
-          </p>
+          <p>{t("card1.parg1")}</p>
         </>
       ),
-      badge: "React",
-      image:
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      badge: t("card1.badge"),
+      image: img,
     },
     {
-      
       title: t("card2.title"),
       description: (
         <>
           <p>{t("card2.parg")}</p>
         </>
       ),
-      badge: "Changelog",
-      image:
-        "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      badge: t("card2.badge"),
+      image: img2,
     },
     {
       title: t("card3.title"),
@@ -44,9 +45,8 @@ export function TracingBeamDemo() {
           <p>{t("card3.parg")}</p>
         </>
       ),
-      badge: "Launch Week",
-      image:
-        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      badge: t("card3.badge"),
+      image: img3,
     },
     {
       title: t("card4.title"),
@@ -55,10 +55,39 @@ export function TracingBeamDemo() {
           <p>{t("card4.parg")}</p>
         </>
       ),
-      badge: "Launch Week",
-      image:
-        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      badge: t("card4.badge"),
+      image: img4,
     },
+    {
+      title: t("card5.title"),
+      description: (
+        <>
+          <p>{t("card5.parg")}</p>
+        </>
+      ),
+      badge: t("card5.badge"),
+      image: img5,
+    },
+    {
+      title: t("card6.title"),
+      description: (
+        <>
+          <p>{t("card6.parg")}</p>
+        </>
+      ),
+      badge: t("card6.badge"),
+      image: img6,
+    },
+    {
+      title: t("card7.title"),
+      description: (
+        <>
+          <p>{t("card7.parg")}</p>
+        </>
+      ),
+      badge: t("card7.badge"),
+      image: img7,
+    }
   ];
 
   return (

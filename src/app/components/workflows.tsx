@@ -18,10 +18,10 @@ export default function Workflows() {
                 {t("workflows.title")}
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-              {t("workflows.content")}
+            <h2 className="animate-[gradient_6s_linear_infinite] dark:bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-black dark:text-transparent md:text-4xl">
+            {t("workflows.content")}
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg dark:text-indigo-200/65  text-gray-800">
               {t("workflows.description")}
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function Workflows() {
                           </span>
                         </span>
                       </div>
-                      <p className="text-gray-600 dark:text-indigo-200/65">
+                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
                         {t("workflows.card1.content")}
                       </p>
                     </div>
@@ -121,7 +121,7 @@ export default function Workflows() {
                           </span>
                         </span>
                       </div>
-                      <p className="text-gray-600 dark:text-indigo-200/65">
+                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
                         {t("workflows.card2.content")}
                       </p>
                     </div>
@@ -171,7 +171,7 @@ export default function Workflows() {
                           </span>
                         </span>
                       </div>
-                      <p className="text-gray-600 dark:text-indigo-200/65">
+                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
                         {t("workflows.card3.content")}
                       </p>
                     </div>
@@ -222,7 +222,7 @@ export default function Workflows() {
                           </span>
                         </span>
                       </div>
-                      <p className="text-gray-600 dark:text-indigo-200/65">
+                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
                         {t("workflows.card4.content")}
                       </p>
                     </div>
@@ -271,7 +271,7 @@ export default function Workflows() {
                           </span>
                         </span>
                       </div>
-                      <p className="text-gray-600 dark:text-indigo-200/65">
+                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
                         {t("workflows.card5.content")}
                       </p>
                     </div>
@@ -320,7 +320,7 @@ export default function Workflows() {
                           </span>
                         </span>
                       </div>
-                      <p className="text-gray-600 dark:text-indigo-200/65">
+                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
                         {t("workflows.card6.content")}
                       </p>
                     </div>

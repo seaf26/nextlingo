@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full">
+    <footer className="w-full z-50">
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         {/* Footer illustration */}
         <div
@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
           {/* 1st block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Product</h3>
+            <h3 className="text-sm font-medium dark:text-gray-200 text-black">Product</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
           {/* 2nd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Company</h3>
+            <h3 className="text-sm font-medium dark:text-gray-200 text-black">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -123,7 +123,7 @@ export default function Footer() {
           </div>
           {/* 3rd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Resources</h3>
+            <h3 className="text-sm font-medium dark:text-gray-200 text-black">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -153,7 +153,7 @@ export default function Footer() {
           </div>
           {/* 4th block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">
+            <h3 className="text-sm font-medium dark:text-gray-200 text-black">
               Content Library
             </h3>
             <ul className="space-y-2 text-sm">
@@ -205,11 +205,11 @@ export default function Footer() {
               <Logo />
             </div>
             <div className="text-sm">
-              <p className="mb-3 text-indigo-200/65">
+              <p className="mb-3 dark:text-indigo-200/65  text-indigo-800 ">
                 © Cruip.com
                 <span className="text-gray-700"> · </span>
                 <Link
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="dark:text-indigo-200/65 text-indigo-800 transition hover:text-indigo-500"
                   href="#0"
                 >
                   Terms
