@@ -1,48 +1,45 @@
 'use client';
 import { MailIcon, PhoneIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+// import { GetStaticPaths, GetStaticProps } from "next";
+// import { useTranslations } from "next-intl";
 import Link from "next/link";
-export default function page() {
-  const t = useTranslations("contact_us");
+const ContactPage = () => {
+  // const t = useTranslations("contact_us");
   return (
     <>
       <div className="mx-auto max-w-3xl pb-12 mt-44 text-center md:pb-20 -z-0">
         <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-indigo-200/50">
-          <span className="inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-            {t("subtitle")}
-          </span>
+            <span className="inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
+            اتصل بنا
+            </span>
         </div>
         <h2 className="animate-[gradient_6s_linear_infinite] dark:bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-black dark:text-transparent md:text-4xl">
-          {t("title")}
+        دعونا نتواصل
         </h2>
         <p className="text-lg dark:text-indigo-200/65  text-gray-800">
-          {t("description")}
+        "نحن نقدم التصميم الأكثر استجابة ووظائف تكنولوجيا المعلومات للشركات والأعمال في جميع أنحاء العالم.
         </p>
       </div>
       <div className="relative  mb-2 mx-auto">
         <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
           <div className="bg-gray-50 dark:bg-gray-950 text-black dark:text-white py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="max-w-lg mx-auto">
-              <h2 className="text-2xl font-extrabold tracking-tight text-black dark:text-white  sm:text-3xl">
-              {t("content.get")}
-              </h2>
-              <p className="mt-3 text-lg leading-6 ">
-                {t("content.description")}
-              </p>
+                <h2 className="text-2xl font-extrabold tracking-tight text-black dark:text-white  sm:text-3xl">
+                تواصل معنا
+                </h2>
+                <p className="mt-3 text-lg leading-6 ">
+                نحن نقدم التصميم الأكثر استجابة ووظائف تكنولوجيا المعلومات للشركات والأعمال في جميع أنحاء العالم.
+                </p>
               <dl className="mt-8 text-base ">
                 <div>
-                  <dt className="sr-only">Postal address</dt>
+                    <dt className="sr-only">العنوان البريدي</dt>
                   <dd>
-                    <p>
-                      {t("content.address1")}
-                    </p>
-                    <p>
-                      {t("content.address2")}
-                    </p>
+                    <p>٦ شارع أبو عجيلة، لوران، الإسكندرية</p>
+                    <p>الإسكندرية - مصر</p>
                   </dd>
                 </div>
                 <div className="mt-6">
-                  <dt className="sr-only">Phone number</dt>
+                    <dt className="sr-only">رقم الهاتف</dt>
                   <dd className="flex gap-1">
                     <PhoneIcon
                       className="flex-shrink-0 h-6 w-6 "
@@ -52,14 +49,14 @@ export default function page() {
                   </dd>
                 </div>
                 <div className="mt-3">
-                  <dt className="sr-only">Email</dt>
+                    <dt className="sr-only">البريد الإلكتروني</dt>
                   <dd className="flex gap-1">
                     <MailIcon
                       className="flex-shrink-0 h-6 w-6 "
                       aria-hidden="true"
                     />
                     <Link href="mailto:inomtech@inom-techs.com">
-                              {t("content.email")}
+                    اضغط هنا لإرسال بريد إلكتروني
                     </Link>
                   </dd>
                 </div>
@@ -90,3 +87,7 @@ export default function page() {
     </>
   );
 }
+
+
+
+export default ContactPage;

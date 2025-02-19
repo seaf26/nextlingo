@@ -1,11 +1,11 @@
 {
-  "header": {
+  "navbar": {
     "home": "Home",
     "projects": "Projects",
     "blog": "Blog",
     "contact": "Contact "
   },
-  "hero_home": {
+  "gemini": {
     "title": "Technology Related Consultancy",
     "content": "We transform ideas into technology",
     "description": "We provide the most responsive and functional IT design for companies and businesses worldwide.",
@@ -95,10 +95,9 @@
     }
   },
   "BentoGrid":{
-    "subtitle": "عرض أحدث مدوناتنا",
-    "title": "أحدث منشورات المدونة",
-    "content": "المدونة"
-    
+    "subtitle": "Showcasing Our Latest Blogs",
+    "title": "Latest Blog Posts",
+    "content": "Blog"
   },
   "AnimatedPinDemo":{
     "subtitle": "Showcasing Our Latest Work",

@@ -10,16 +10,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      fontSize: {
-        "3xl": [
-          "1.75rem",
-          { lineHeight: "1.3571", letterSpacing: "-0.0268em" },
-        ],
-        "4xl": ["2.5rem", { lineHeight: "1.1", letterSpacing: "-0.0268em" }],
-        "5xl": ["3.5rem", { lineHeight: "1", letterSpacing: "-0.0268em" }],
-        "6xl": ["4rem", { lineHeight: "1", letterSpacing: "-0.0268em" }],
-        "7xl": ["4.5rem", { lineHeight: "1", letterSpacing: "-0.0268em" }],
+      fontFamily: {
+        cairo: ['"Cairo"', "serif"],
       },
+
       animation: {
         shine: "shine 5s ease-in-out 500ms infinite",
       },
@@ -36,10 +30,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    addVariablesForColors,
-  ],
+  plugins: [require("@tailwindcss/forms"), addVariablesForColors],
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

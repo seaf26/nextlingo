@@ -2,27 +2,31 @@ import Image from "next/image";
 import WorflowImg01 from "../../../public/images/workflow-01.png";
 import WorflowImg02 from "../../../public/images/workflow-02.png";
 import WorflowImg03 from "../../../public/images/workflow-03.png";
+import webdev from "../../../public/images/webdev.jpg";
+import cyber from "../../../public/images/cybersecyrity.jpg";
+import programming from "../../../public/images/programming.jpg";
+import digital from "../../../public/images/digtial.jpg";
+import bussiness from "../../../public/images/bussiness.jpg";
+import seo from "../../../public/images/seo.jpg";
 import Spotlight from "../components/spotlight";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
 
 export default function Workflows() {
-  const t = useTranslations();
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 mt-16">
         <div className="pb-12 md:pb-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
             <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-indigo-200/50">
-              <span className="inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                {t("workflows.title")}
-              </span>
+                <span className="inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
+                خدماتنا الأساسية
+                </span>
             </div>
             <h2 className="animate-[gradient_6s_linear_infinite] dark:bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-black dark:text-transparent md:text-4xl">
-            {t("workflows.content")}
+            حلول مبتكرة لنجاحك
             </h2>
-            <p className="text-lg dark:text-indigo-200/65  text-gray-800">
-              {t("workflows.description")}
+            <p className="text-lg dark:text-indigo-200/65 text-gray-800">
+            حلول أنيقة لتطوير الويب، تطبيقات الجوال، التسويق الرقمي، ونمو الأعمال، مصممة لتحقيق النجاح.
             </p>
           </div>
           {/* Spotlight items */}
@@ -55,8 +59,8 @@ export default function Workflows() {
                     </div>
                     {/* Image */}
                     <Image
-                      className="inline-flex"
-                      src={WorflowImg01}
+                      className="inline-flex w-full"
+                      src={programming}
                       width={350}
                       height={288}
                       alt="Workflow 01"
@@ -65,14 +69,14 @@ export default function Workflows() {
                     <div className="p-6">
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
-                          <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card1.title")}
-                          </span>
+                            <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
+                            تطوير الويب
+                            </span>
                         </span>
                       </div>
-                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
-                        {t("workflows.card1.content")}
-                      </p>
+                        <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
+                        تطوير الويب يشمل إنشاء وصيانة المواقع أو التطبيقات، مع التركيز على الواجهة الأمامية والخلفية، الوظائف، الاستجابة، وتجربة المستخدم.
+                        </p>
                     </div>
                   </div>
                 </div>
@@ -106,8 +110,8 @@ export default function Workflows() {
                     </div>
                     {/* Image */}
                     <Image
-                      className="inline-flex"
-                      src={WorflowImg01}
+                      className="inline-flex w-full"
+                      src={webdev}
                       width={350}
                       height={288}
                       alt="Workflow 01"
@@ -116,14 +120,14 @@ export default function Workflows() {
                     <div className="p-6">
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
-                          <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card2.title")}
-                          </span>
+                            <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
+                            تطبيقات الجوال
+                            </span>
                         </span>
                       </div>
-                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
-                        {t("workflows.card2.content")}
-                      </p>
+                        <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
+                        تطوير تطبيقات الجوال يشمل إنشاء برامج للهواتف الذكية، ويتضمن التصميم، البرمجة، الاختبار، والنشر لتحقيق الوظائف، الترفيه، أو المعلومات.
+                        </p>
                     </div>
                   </div>
                 </div>
@@ -156,8 +160,8 @@ export default function Workflows() {
                     </div>
                     {/* Image */}
                     <Image
-                      className="inline-flex"
-                      src={WorflowImg01}
+                      className="inline-flex w-full"
+                      src={cyber}
                       width={350}
                       height={288}
                       alt="Workflow 01"
@@ -166,14 +170,14 @@ export default function Workflows() {
                     <div className="p-6">
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
-                          <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card3.title")}
-                          </span>
+                            <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
+                            الأمن السيبراني
+                            </span>
                         </span>
                       </div>
-                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
-                        {t("workflows.card3.content")}
-                      </p>
+                        <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
+                        الأمن السيبراني يحمي الأنظمة والشبكات والبيانات من الهجمات الرقمية، مما يضمن سرية وسلامة وتوافر المعلومات الحساسة.
+                        </p>
                     </div>
                   </div>
                 </div>
@@ -207,8 +211,8 @@ export default function Workflows() {
                     </div>
                     {/* Image */}
                     <Image
-                      className="inline-flex"
-                      src={WorflowImg01}
+                      className="inline-flex w-full"
+                      src={digital}
                       width={350}
                       height={288}
                       alt="Workflow 01"
@@ -217,14 +221,14 @@ export default function Workflows() {
                     <div className="p-6">
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
-                          <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card4.title")}
-                          </span>
+                            <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
+                            التسويق الرقمي
+                            </span>
                         </span>
                       </div>
-                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
-                        {t("workflows.card4.content")}
-                      </p>
+                        <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
+                        التسويق الرقمي يستخدم القنوات عبر الإنترنت مثل تحسين محركات البحث، وسائل التواصل الاجتماعي، حملات البريد الإلكتروني، وإنشاء المحتوى لتعزيز رؤية المنتج والترويج له.
+                        </p>
                     </div>
                   </div>
                 </div>
@@ -256,8 +260,8 @@ export default function Workflows() {
                     </div>
                     {/* Image */}
                     <Image
-                      className="inline-flex"
-                      src={WorflowImg01}
+                      className="inline-flex w-full"
+                      src={bussiness}
                       width={350}
                       height={288}
                       alt="Workflow 01"
@@ -266,14 +270,14 @@ export default function Workflows() {
                     <div className="p-6">
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
-                          <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card5.title")}
-                          </span>
+                            <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
+                            نمو الأعمال
+                            </span>
                         </span>
                       </div>
-                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
-                        {t("workflows.card5.content")}
-                      </p>
+                        <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
+                        نمو الأعمال هو وظيفة دورة حياة الأعمال، اتجاهات نمو الصناعة، ورغبة المالكين في خلق قيمة الأسهم.
+                        </p>
                     </div>
                   </div>
                 </div>
@@ -305,8 +309,8 @@ export default function Workflows() {
                     </div>
                     {/* Image */}
                     <Image
-                      className="inline-flex"
-                      src={WorflowImg01}
+                      className="inline-flex w-full"
+                      src={seo}
                       width={350}
                       height={288}
                       alt="Workflow 01"
@@ -315,14 +319,14 @@ export default function Workflows() {
                     <div className="p-6">
                       <div className="mb-3">
                         <span className="btn-sm relative rounded-full bg-gray-100/40 dark:bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.200/.15),theme(colors.gray.200/.5))_border-box] dark:before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-200/60 dark:hover:bg-gray-800/60">
-                          <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
-                            {t("workflows.card6.title")}
-                          </span>
+                            <span className="bg-gradient-to-r from-indigo-500 to-indigo-300 bg-clip-text text-transparent">
+                            تحسين محركات البحث
+                            </span>
                         </span>
                       </div>
-                      <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
-                        {t("workflows.card6.content")}
-                      </p>
+                        <p className="text-gray-800 font-semibold dark:text-indigo-200/65">
+                        تحسين محركات البحث هو عملية تحسين جودة وكمية حركة المرور إلى موقع ويب أو صفحة ويب من محركات البحث.
+                        </p>
                     </div>
                   </div>
                 </div>

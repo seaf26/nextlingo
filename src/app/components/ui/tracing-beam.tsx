@@ -28,10 +28,10 @@ export const TracingBeam = ({
   console.log("svgHeight"+svgHeight);
   useEffect(() => {
     if (contentRef.current) {
-      setSvgHeight(contentRef.current.offsetHeight);
+      const maxHeight = 5200; // Example limit
+      setSvgHeight(Math.min(contentRef.current.offsetHeight, maxHeight));
     }
   }, []);
-
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
     {

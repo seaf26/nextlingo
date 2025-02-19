@@ -1,13 +1,26 @@
-import createNextIntlPlugin from "next-intl/plugin";
 
-const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['aceternity.com', 'assets.aceternity.com' ,'images.unsplash.com'], // Add the external domains here
-
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https' as const,
+        hostname: 'aceternity.com',
+      },
+      {
+        protocol: 'https' as const,
+        hostname: 'assets.aceternity.com',
+      },
+      {
+        protocol: 'https' as const,
+        hostname: 'images.unsplash.com',
+      },
+    ],
   },
+  output: 'export' as const,
+// FIX
 };
 
-export default withNextIntl(nextConfig);
+export default nextConfig;

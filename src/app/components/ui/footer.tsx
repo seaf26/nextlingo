@@ -1,5 +1,6 @@
-import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import React from 'react';
+import { JSX } from 'react';
 
 interface NavigationItem {
   name: string
@@ -12,17 +13,15 @@ interface SocialItem {
   icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element
 }
 
-const locale = 'en'; // Define the locale variable
 
 
 export default function Footer() {
-  const t = useTranslations("footer");
 const navigation = {
   main: [
-    { name: t('home'), href: '/' },
-    { name: t('projects'), href: `/${locale}/about` },
-    { name: t('blog'), href: `/${locale}/blog` },
-    { name: t('contact'), href: `/${locale}/contact` },
+    { name: 'الصفحة الرئيسية ', href: '/' },
+    { name: 'مشاريع', href: '/about' },
+    { name: 'المدونة', href: '/blog' },
+    { name: 'التواصل', href: '/contact' },
   ] as NavigationItem[],
   social: [
     {
@@ -60,21 +59,23 @@ const navigation = {
         <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
           {navigation.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
-              <a href={item.href} className="text-base text-gray-500 hover:text-gray-200">
+              <Link href={item.href} className="text-base text-gray-500 hover:text-gray-200">
                 {item.name}
-              </a>
+              </Link>
             </div>
           ))}
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <Link key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
+            </Link>
           ))}
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">&copy; {t('copyRight')}</p>
+        <p className="mt-8 text-center text-base text-gray-400">
+          &copy; © 2024 ARC, INO Studio. جميع الحقوق محفوظة.
+          </p>
      
       </div>
     </footer>

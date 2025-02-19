@@ -5,3 +5,13 @@
 @import "additional-styles/utility-patterns.css";
 @import "additional-styles/theme.css";
 @import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Almarai', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amiri', serif;
+}

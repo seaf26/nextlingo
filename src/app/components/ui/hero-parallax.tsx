@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   motion,
   useScroll,
@@ -27,9 +27,28 @@ export const HeroParallax = ({
     target: ref,
     offset: ["start start", "end start"],
   });
+  const [springConfig, setSpringConfig] = useState({
+    stiffness: 300,
+    damping: 30,
+    bounce: 100,
+  });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  useEffect(() => {
+    const updateSpringConfig = () => {
+      if (window.innerWidth < 450) {
+        setSpringConfig({ stiffness: 0, damping: 0, bounce: 0 });
+      } else {
+        setSpringConfig({ stiffness: 300, damping: 30, bounce: 100 });
+      }
+    };
 
+    updateSpringConfig();
+    window.addEventListener("resize", updateSpringConfig);
+
+    return () => {
+      window.removeEventListener("resize", updateSpringConfig);
+    };
+  }, []);
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
     springConfig
@@ -57,7 +76,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] max-[450px]:h-[130vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -105,12 +124,10 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
+      شركة inom techs 
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+        نبني منتجات جميلة بأحدث التقنيات والأطر. نحن فريق من المطورين والمصممين الشغوفين الذين يحبون بناء منتجات مذهلة.
       </p>
     </div>
   );
