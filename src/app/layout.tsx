@@ -17,9 +17,9 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html dir="rtl">
+    <html dir="rtl" className="dark">
       <body
-        className={`${amiri.variable} dark:bg-gray-950 overflow-x-hidden bg-white text-black text-base dark:text-gray-200 antialiased mx-auto`}
+        className={`${amiri.variable} dark:bg-black overflow-x-hidden bg-white text-black text-base dark:text-gray-200 antialiased mx-auto`}
       >
         <ClientWrapper>
           <NavbarDemo />

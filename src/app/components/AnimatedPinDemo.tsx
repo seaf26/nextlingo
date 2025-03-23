@@ -2,11 +2,14 @@
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import sa from "../../../public/images/sa.png";
+import erp from "../../../public/images/erp.png";
 import kids from "../../../public/images/kids.png";
 import mana from "../../../public/images/mana.png";
 import inov from "../../../public/images/inoventhomepage.png";
+import outseller from "../../../public/images/outseller1.png";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export function AnimatedPinDemo() {
   return (
@@ -93,7 +96,7 @@ export function AnimatedPinDemo() {
                   الرقمية، مما يضمن سرية وسلامة وتوافر المعلومات الحساسة.
                 </span>
               </div>
-                <Image src={sa} alt="تصوير فوتوغرافي"  className="flex flex-1 w-full rounded-lg mt-4object-cover" />
+                <Image src={outseller} alt="تصوير فوتوغرافي"  className="flex flex-1 w-full rounded-lg mt-4object-cover" />
             </div>
           </PinContainer>
         </div>
@@ -117,12 +120,12 @@ export function AnimatedPinDemo() {
         </div>
         <div className=" mt-16 flex items-center justify-center  ">
           <PinContainer
-            title="/ui.aceternity.com"
-            href="https://outseller.inom-techs.com/"
+            title="/inom-techs-ultimatefosters.com"
+            href="https://pos.ultimatefosters.com/home"
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] max-[400px]:w-[16rem] max-[400px]h-[16rem]">
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base  dark:text-slate-100 text-black">
-                teams talk 
+                erp system 
                               </h3>
               <div className="text-base !m-0 !p-0 font-normal">
                 <span className="text-slate-500 ">
@@ -130,11 +133,17 @@ export function AnimatedPinDemo() {
                   ورغبة المالكين في خلق قيمة الأسهم.
                 </span>
               </div>
-              <Image src={sa} alt="تصوير فوتوغرافي"  className="flex flex-1 w-full rounded-lg mt-4object-cover" />
+              <Image src={erp} alt="تصوير فوتوغرافي"  className="flex flex-1 w-full rounded-lg mt-4object-cover" />
               </div>
           </PinContainer>
+          
         </div>
       </div>
+
+      <div className="flex flex-col mt-20 w-[150px] mx-auto">
+        <Link className="bg-gradient-to-r from-indigo-500 to-indigo-200 text-white font-bold py-2 px-4 rounded-md hover:from-indigo-600 hover:to-indigo-300 transition-all duration-300 mx-auto text-center" href="/about">للمزيد</Link>
+      </div>
+      
     </>
   );
 }

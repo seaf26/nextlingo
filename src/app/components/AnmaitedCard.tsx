@@ -25,7 +25,7 @@ export function CardDemo() {
             <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
 
               {/* web dev */}
-              <div className="max-w-xs w-full">
+              <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
                     "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
@@ -50,7 +50,7 @@ export function CardDemo() {
               </div>
 
               {/* mobile */}
-              <div className="max-w-xs w-full">
+              <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
                     "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
@@ -74,7 +74,7 @@ export function CardDemo() {
                 </div>
               </div>
               {/* cyber */}
-              <div className="max-w-xs w-full">
+              <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
                     "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
@@ -98,7 +98,7 @@ export function CardDemo() {
                 </div>
               </div>
               {/* marketing */}
-              <div className="max-w-xs w-full">
+              <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
                     "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
@@ -122,7 +122,7 @@ export function CardDemo() {
                 </div>
               </div>
               {/* seo */}
-              <div className="max-w-xs w-full">
+              <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
                     "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
@@ -147,7 +147,7 @@ export function CardDemo() {
               </div>
 
               {/* ui ux */}
-              <div className="max-w-xs w-full">
+              <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
                     "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",

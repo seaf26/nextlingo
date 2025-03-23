@@ -6,16 +6,18 @@ import { AnimatedPinDemo } from "./components/AnimatedPinDemo";
 import { HeroParallax } from "./components/ui/hero-parallax";
 import ContactPage from "./contact/ContactPage";
 import { CardDemo } from "./components/AnmaitedCard";
+import FeaturesSectionDemo from "./components/features-section-demo-3";
 
 const Home = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto" dir="rtl"> {/* Add dir="rtl" */}
       {/* <PageIllustration /> */}
       <ContactPage />
       <Workflows />
       <CardDemo/> 
       {/* <CardDemoGrid /> */}
-      <AnimatedPinDemo />
+      {/* <AnimatedPinDemo /> */}
+      <FeaturesSectionDemo/>
       <Cta />
 
     </div>
