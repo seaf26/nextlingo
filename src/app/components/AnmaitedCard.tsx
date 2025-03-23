@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import Spotlight from "./spotlight";
+import Link from "next/link";
 
 export function CardDemo() {
   return (
@@ -25,6 +26,7 @@ export function CardDemo() {
             <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
 
               {/* web dev */}
+              <Link href="/blog/laravel-11" className="max-w-xs w-full" data-aos="fade-up">
               <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
@@ -48,6 +50,7 @@ export function CardDemo() {
                   </div>
                 </div>
               </div>
+              </Link>
 
               {/* mobile */}
               <div className="max-w-xs w-full" data-aos="fade-up">
@@ -74,6 +77,7 @@ export function CardDemo() {
                 </div>
               </div>
               {/* cyber */}
+              <Link href="/blog/cyber-security-training" >
               <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
@@ -97,7 +101,9 @@ export function CardDemo() {
                   </div>
                 </div>
               </div>
+              </Link>
               {/* marketing */}
+              <Link href="/blog" >
               <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
@@ -121,7 +127,9 @@ export function CardDemo() {
                   </div>
                 </div>
               </div>
+              </Link>
               {/* seo */}
+              <Link href="/blog/seo" >
               <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
@@ -145,8 +153,10 @@ export function CardDemo() {
                   </div>
                 </div>
               </div>
+              </Link>
 
               {/* ui ux */}
+              <Link href="/blog/ui-ux-design" >
               <div className="max-w-xs w-full" data-aos="fade-up">
                 <div
                   className={cn(
@@ -170,6 +180,7 @@ export function CardDemo() {
                   </div>
                 </div>
               </div>
+              </Link>
             </Spotlight>
           </div>
         </div>

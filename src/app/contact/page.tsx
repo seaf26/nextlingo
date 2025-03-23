@@ -22,7 +22,7 @@ const ContactPage = () => {
       </div>
       <div className="relative  mb-2 mx-auto">
         <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
-          <div className="bg-gray-50 dark:bg-gray-950 text-black dark:text-white py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+          <div className="bg-gray-50 dark:bg-black text-black dark:text-white py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="max-w-lg mx-auto">
                 <h2 className="text-2xl font-extrabold tracking-tight text-black dark:text-white  sm:text-3xl">
                 تواصل معنا

@@ -63,7 +63,7 @@ body{
 }
 
 html.dark {
-  background-color: #0f172a; /* Example dark background */
+  background-color: black; /* Example dark background */
   color: #e2e8f0; /* Example dark text color */
 }
 
