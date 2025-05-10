@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image"; // Add this import
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -10,7 +10,7 @@ import { projectData } from "../../../components/projectData";
 // Project data structure
 interface ProjectImage {
   id: string;
-  src: any; // StaticImageData
+  src: StaticImageData | string; // Replace 'any' with 'StaticImageData | string'
   alt: string;
 }
 
@@ -24,8 +24,6 @@ interface ProjectCategory {
   rtl: boolean;
   url: string;
 }
-
-
 
 export default function ProjectDetailPage() {
   const params = useParams();

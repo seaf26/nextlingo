@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image"; // Add this import
 import educhain from "../../../public/images/educhaini.png"
 import educhain2 from "../../../public/images/educhain2.png";
 import educhain3 from "../../../public/images/educhain3.png";
@@ -25,7 +26,7 @@ import erp4 from "../../../public/images/erp.png";
 
 interface ProjectImage {
   id: string;
-  src: any; // StaticImageData
+  src: StaticImageData | string; // Replace 'any' with 'StaticImageData | string'
   alt: string;
 }
 

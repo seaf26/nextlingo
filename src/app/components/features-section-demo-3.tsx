@@ -91,7 +91,7 @@ const FeatureCard = ({
 }: {
   children?: React.ReactNode;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) => {
   return (
     <div className={cn(`p-4 sm:p-8 relative overflow-hidden`, className)} {...props}>
